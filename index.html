@@ -70,6 +70,21 @@ header.solid .menu{color:var(--ink)}
 .wcard p b{color:var(--forest)}
 @media(max-width:900px){.wgrid{grid-template-columns:1fr}}
 
+/* fit */
+.vs{display:grid;grid-template-columns:1fr 1.15fr;gap:22px;margin-top:44px}
+.vcard{border-radius:var(--r);padding:36px 34px;border:1px solid var(--line)}
+.vcard .tag{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;padding:6px 12px;border-radius:999px;background:var(--cream);color:var(--muted);margin-bottom:16px}
+.vcard h3{font-family:"Noto Serif KR",serif;font-size:24px;margin-bottom:16px}
+.vcard ul{list-style:none;display:grid;gap:9px;margin-bottom:18px}
+.vcard li{padding-left:26px;position:relative;font-size:16px}
+.vcard li:before{content:"✓";position:absolute;left:0;color:var(--muted);font-weight:700}
+.vcard p{color:var(--muted);font-size:15px}
+.vcard.hard{background:var(--forest);color:#fff;border-color:var(--forest);box-shadow:0 24px 50px rgba(18,48,42,.25)}
+.vcard.hard .tag{background:#d9c29a;color:var(--forest)}
+.vcard.hard li:before{color:#d9c29a}
+.vcard.hard p{color:rgba(255,255,255,.8);margin-bottom:22px}
+@media(max-width:900px){.vs{grid-template-columns:1fr}}
+
 /* services */
 .svc-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
 .tabs{display:inline-flex;background:var(--cream);border-radius:999px;padding:6px}
@@ -240,8 +255,8 @@ footer .brand{color:#fff}
   <svg class="fern-big" viewBox="0 0 60 80" style="color:#d6dad4"><use href="#fern"/></svg>
   <div class="wrap">
     <div class="eyebrow">Silver Fern Partners</div>
-    <h1>회사의 자금은 <em>정책</em>으로,<br>대표님의 미래는 <em>설계</em>로.</h1>
-    <p class="sub">정책자금 · 정부지원금 · 기업인증부터 퇴직연금과 개인 재무까지.<br>실버펀 파트너스가 중소기업과 대표님의 재무를 한 곳에서 챙깁니다.</p>
+    <h1>“한도가 찼다”는 정책자금,<br>저희는 <em>거기서</em> 시작합니다.</h1>
+    <p class="sub">이미 정책자금을 받아 매출 대비 한도가 찼다는 말을 들으셨나요?<br>막힌 자금을 다시 푸는 일, 실버펀 파트너스가 합니다.</p>
     <div class="cta">
       <a href="#finder" class="btn btn-brass">우리 회사 확인할 항목 찾기 →</a>
       <a href="#contact" class="btn btn-ghost">상담 신청하기</a>
@@ -256,9 +271,21 @@ footer .brand{color:#fff}
     <div class="eyebrow reveal">Why us</div>
     <h2 class="title reveal">대표님, 이런 고민<br>혼자 하고 계시지 않나요?</h2>
     <div class="wgrid">
-      <div class="wcard reveal"><q>정책자금이 있다는데, 우리 회사가 받을 수 있는 게 뭔지 모르겠어요.</q><p>기업 상황에 맞는 <b>정책자금과 기업인증</b>을 함께 찾습니다.</p></div>
+      <div class="wcard reveal"><q>정책자금을 이미 받아서, 매출 대비 한도가 찼다고 하네요.</q><p>바로 이때가 <b>실버펀 파트너스가 필요한 순간</b>입니다.</p></div>
       <div class="wcard reveal"><q>직원을 더 뽑고 싶은데 인건비가 부담돼요.</q><p><b>신규채용 인건비 · 기업훈련 지원비</b>부터 확인해 드립니다.</p></div>
       <div class="wcard reveal"><q>회사 일만 하다 보니 제 노후와 가족 대비는 뒷전이에요.</q><p>퇴직연금 · IRP · 보장까지 <b>대표님 개인 재무</b>도 함께 봅니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="fit">
+  <div class="wrap">
+    <div class="eyebrow reveal">Who we help</div>
+    <h2 class="title reveal">쉬운 건 직접 하셔도 됩니다.<br>막힌 건 저희가 풉니다.</h2>
+    <p class="lead reveal">요즘 정책자금은 대표자가 전화만 해도 안내를 잘 해줍니다. 그래서 저희는 솔직하게 말씀드립니다.</p>
+    <div class="vs">
+      <div class="vcard easy reveal"><div class="tag">직접 신청해 보세요</div><h3>처음 받는 정책자금</h3><ul><li>매출이 꾸준히 나오고 있다</li><li>정책자금을 받아본 적이 없다</li><li>은행 대출도 많지 않다</li></ul><p>이런 경우엔 비교적 쉽게 받으실 수 있습니다.<br>저희가 꼭 필요하지 않습니다.</p></div>
+      <div class="vcard hard reveal"><div class="tag">실버펀 파트너스의 일</div><h3>한도가 찬 기업의 추가 자금</h3><ul><li>이미 정책자금을 받았다</li><li>매출 대비 기존 자금 비중이 높다</li><li>“더는 어렵다”는 답을 들었다</li></ul><p>여기서부터가 저희가 풀어드리는 영역입니다.</p><a href="#contact" class="btn btn-brass">막힌 자금 상담하기 →</a></div>
     </div>
   </div>
 </section>
@@ -306,6 +333,7 @@ footer .brand{color:#fff}
     <p class="lead reveal">해당되는 항목을 눌러보세요. 상담 때 먼저 확인해 볼 항목을 정리해 드립니다.</p>
     <div class="fgrid">
       <div class="qs" id="qs">
+        <label class="q"><input type="checkbox" value="full"><span class="box"></span>이미 정책자금을 받아서 추가 자금이 잘 안 나온다</label>
         <label class="q"><input type="checkbox" value="fund"><span class="box"></span>운영자금이나 시설자금이 필요하다</label>
         <label class="q"><input type="checkbox" value="hire"><span class="box"></span>올해 직원을 새로 뽑을 계획이 있다</label>
         <label class="q"><input type="checkbox" value="train"><span class="box"></span>직원 교육을 하고 싶은데 비용이 부담된다</label>
@@ -420,7 +448,7 @@ const hd=document.getElementById('hd');const onS=()=>hd.classList.toggle('solid'
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id==='p-'+b.dataset.t))});
-const MAP={fund:'기업별 맞춤 정책자금',hire:'신규채용 인건비 지원',train:'기업훈련 지원비',rnd:'기업부설연구소 설립 · 바우처 사업',corp:'법인 전환 및 정관 정비',pension:'퇴직연금제도 도입 · 단체보험',credit:'기업 신용등급 평가 및 관리',succ:'가업승계 · 절세 · 경정청구'};
+const MAP={full:'기존 정책자금 구조 점검 · 추가 자금 설계 (실버펀 핵심 영역)',fund:'기업별 맞춤 정책자금',hire:'신규채용 인건비 지원',train:'기업훈련 지원비',rnd:'기업부설연구소 설립 · 바우처 사업',corp:'법인 전환 및 정관 정비',pension:'퇴직연금제도 도입 · 단체보험',credit:'기업 신용등급 평가 및 관리',succ:'가업승계 · 절세 · 경정청구'};
 const qs=[...document.querySelectorAll('#qs .q')],rl=document.getElementById('rlist'),em=document.getElementById('empty'),rb=document.getElementById('rbtn');
 let picked=[];
 qs.forEach(q=>q.querySelector('input').addEventListener('change',e=>{q.classList.toggle('on',e.target.checked);picked=qs.filter(x=>x.querySelector('input').checked).map(x=>MAP[x.querySelector('input').value]);
