@@ -70,6 +70,16 @@ header.solid .menu{color:var(--ink)}
 .wcard p b{color:var(--forest)}
 @media(max-width:900px){.wgrid{grid-template-columns:1fr}}
 
+/* refer */
+.refer{background:var(--cream)}
+.refer-in{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.refer .lead b{color:var(--forest)}
+.rsteps{display:grid;gap:14px}
+.rsteps div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 24px 20px 78px;position:relative}
+.rsteps span{position:absolute;left:24px;top:20px;font-family:"Cormorant Garamond",serif;font-size:30px;color:var(--brass);font-weight:600;line-height:1}
+.rsteps b{display:block;font-size:17.5px;margin-bottom:2px}
+.rsteps p{color:var(--muted);font-size:14.5px}
+@media(max-width:900px){.refer-in{grid-template-columns:1fr;gap:30px}}
 /* fit */
 .credbar{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:8px}
 .credbar span{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;font-size:13.5px;color:var(--muted)}
@@ -272,7 +282,7 @@ footer .brand{color:#fff}
   <div class="wrap">
     <div class="eyebrow">Silver Fern Partners</div>
     <h1>“한도가 찼다”는 정책자금,<br>저희는 <em>거기서</em> 시작합니다.</h1>
-    <p class="sub">이미 정책자금을 받아 매출 대비 한도가 찼다는 말을 들으셨나요? 신청했다가 이유도 모른 채 떨어지셨나요?<br>막힌 자금을 다시 푸는 일, 실버펀 파트너스가 합니다.</p>
+    <p class="sub">이미 정책자금을 받아 매출 대비 한도가 찼다는 말을 들으셨나요? AI로 쉽게 신청했다가, 이유도 모른 채 떨어지셨나요?<br>막힌 자금을 다시 푸는 일, 실버펀 파트너스가 합니다.</p>
     <div class="cta">
       <a href="#finder" class="btn btn-brass">우리 회사 확인할 항목 찾기 →</a>
       <a href="#contact" class="btn btn-ghost">상담 신청하기</a>
@@ -299,10 +309,28 @@ footer .brand{color:#fff}
     <div class="eyebrow reveal">Who we help</div>
     <h2 class="title reveal">쉬운 건 직접 하셔도 됩니다.<br>막힌 건 저희가 풉니다.</h2>
     <p class="lead reveal">요즘 정책자금은 절차가 많이 단순해져서, 대표자가 전화만 해도 안내를 잘 해줍니다. 그래서 저희는 솔직하게 말씀드립니다.</p>
-    <div class="why reveal"><b>쉬워진 만큼, 빨리 떨어집니다.</b><span>그리고 왜 떨어졌는지는 아무도 설명해 주지 않습니다. 매출이나 기술력이 부족하다는 짧은 판단으로 끝납니다. 그 막막한 자리에서 저희가 이유를 찾고, 다시 준비합니다. 공대 출신 엔지니어와 ISO 심사 경험으로, 회사의 기술을 평가자가 알아보는 언어로 다시 정리합니다.</span></div>
+    <div class="why reveal"><b>“AI로 신청하면 된다”? 쉬워진 만큼, 빨리 떨어집니다.</b><span>그리고 왜 떨어졌는지는 아무도 설명해 주지 않습니다. 매출이나 기술력이 부족하다는 짧은 판단으로 끝납니다. 그 막막한 자리에서 저희가 이유를 찾고, 다시 준비합니다. 공대 출신 엔지니어와 ISO 심사 경험으로, 회사의 기술을 평가자가 알아보는 언어로 다시 정리합니다.</span></div>
     <div class="vs">
       <div class="vcard easy reveal"><div class="tag">직접 신청해 보세요</div><h3>처음 받는 정책자금</h3><ul><li>매출이 꾸준히 나오고 있다</li><li>정책자금을 받아본 적이 없다</li><li>은행 대출도 많지 않다</li></ul><p>이런 경우엔 비교적 쉽게 받으실 수 있습니다.<br>저희가 꼭 필요하지 않습니다.</p></div>
       <div class="vcard hard reveal"><div class="tag">실버펀 파트너스의 일</div><h3>한도가 찬 기업의 추가 자금</h3><ul><li>이미 정책자금을 받았다</li><li>매출 대비 기존 자금 비중이 높다</li><li>“더는 어렵다”는 답을 들었다</li><li>신청했는데 왜 떨어졌는지 모른다</li></ul><p>여기서부터가 저희가 풀어드리는 영역입니다.</p><a href="#contact" class="btn btn-brass">막힌 자금 상담하기 →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="refer">
+  <div class="wrap">
+    <div class="refer-in">
+      <div>
+        <div class="eyebrow reveal">Trusted by peers</div>
+        <h2 class="title reveal">같은 일을 하는 회사들도<br>어려운 건은 저희에게 보냅니다.</h2>
+        <p class="lead reveal">실버펀 파트너스는 기술 기반 회사입니다. 신청서를 대신 내는 데서 끝내지 않고, <b>정확히 통과되도록</b> 끝까지 만듭니다. 그래서 동종 업계에서도 풀기 어려운 건을 저희에게 맡깁니다.</p>
+        <a class="btn btn-dark reveal" style="margin-top:26px" href="mailto:mskim@svfpartners.com?cc=jay.hwang@svfpartners.com&subject=%5B%ED%98%91%EC%97%85%20%EB%AC%B8%EC%9D%98%5D%20%EC%BB%A8%EC%84%A4%ED%8C%85%EC%82%AC%20%EC%9D%98%EB%A2%B0">컨설팅사 협업 문의 →</a>
+      </div>
+      <div class="rsteps">
+        <div class="reveal"><span>01</span><b>기술을 이해합니다</b><p>공대 출신 엔지니어가 회사의 기술과 강점을 직접 읽습니다.</p></div>
+        <div class="reveal"><span>02</span><b>떨어진 이유를 찾습니다</b><p>아무도 설명해 주지 않는 탈락 사유를 분석합니다.</p></div>
+        <div class="reveal"><span>03</span><b>통과되는 신청을 만듭니다</b><p>평가자가 알아보는 언어로 다시 정리해 신청합니다.</p></div>
+      </div>
     </div>
   </div>
 </section>
